@@ -1,3 +1,4 @@
+package TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.LinkedList;
@@ -11,6 +12,7 @@ public class TreeNode {
   private String print = "";
   private double trueMinusFalse;
   private double sumChild = 0;
+  private double DeltaPrices;
 
   private boolean success = false;
 
@@ -57,21 +59,19 @@ public class TreeNode {
     return price;
   }
 
-  public double calDeltaPrice() {
-    double GlobalPrices = 2 / (1 + Math.exp(-2 * 0.05));
-    double out = Math.abs(calPrice() - GlobalPrices);
-    if (out < 0.03) {
+  public void calDeltaPrice(double GlobalPrices) {
+    DeltaPrices = Math.abs(calPrice() - GlobalPrices);
+    if (DeltaPrices < 0.04) {
       success = true;
     }
-    return out;
   }
 
   public double oneDiviveAns() {
-    if (calDeltaPrice() == 0) {
+    if (DeltaPrices == 0) {
       success = true;
       return 1;
     } else {
-      return 1 / calDeltaPrice();
+      return 1 / DeltaPrices;
     }
   }
 
@@ -115,7 +115,7 @@ public class TreeNode {
     String out = "\t  " + stt + "\t    " + getTrueMinusFalse() + "                    " + getSumChild()
         + "              "
         + calPrice() + "         " +
-        +calDeltaPrice() + "          " + oneDiviveAns() + "          "
+        +DeltaPrices + "          " + oneDiviveAns() + "          "
         + calPercent(sum) + " ( % )" + "\n \n";
     return out;
   }
@@ -131,6 +131,14 @@ public class TreeNode {
 
   public double getTrueMinusFalse() {
     return trueMinusFalse;
+  }
+
+  public double getDeltaPrices() {
+    return DeltaPrices;
+  }
+
+  public void setDeltaPrices(double deltaPrices) {
+    DeltaPrices = deltaPrices;
   }
 
   public double getSumChild() {
