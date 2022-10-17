@@ -10,7 +10,7 @@ public class RandomTest {
   // Kiểm thử ngẫu nhiên
 
   @Test
-  public void testMain0() throws Exception {
+  public void testRandom0() throws Exception {
     boolean[] tree0 = { false, false, false, false, true, true, false, true, false, false };
     boolean[] tree1 = { true, true, false, true, true, true, true, true, true, false };
     boolean[] tree2 = { true, false, true, false, false, false, true, true, true, true };

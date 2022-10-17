@@ -1,4 +1,5 @@
 package TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.LinkedList;
@@ -69,7 +70,7 @@ public class TreeNode {
   public double oneDiviveAns() {
     if (DeltaPrices == 0) {
       success = true;
-      return 1;
+      return 10000000;
     } else {
       return 1 / DeltaPrices;
     }

@@ -12,7 +12,7 @@ public class GTBTest {
 
   // nom - nom - nom - min
   @Test
-  public void testMain1() throws Exception {
+  public void testGTB1() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -24,7 +24,7 @@ public class GTBTest {
   // nom - nom - nom - min+
 
   @Test
-  public void testMain2() throws Exception {
+  public void testGTB2() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -36,7 +36,7 @@ public class GTBTest {
   // nom - nom - nom - nom
 
   @Test
-  public void testMain3() throws Exception {
+  public void testGTB3() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -48,7 +48,7 @@ public class GTBTest {
   // nom - nom - nom - max-
 
   @Test
-  public void testMain4() throws Exception {
+  public void testGTB4() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -60,7 +60,7 @@ public class GTBTest {
   // nom - nom - nom - max
 
   @Test
-  public void testMain5() throws Exception {
+  public void testGTB5() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -72,7 +72,7 @@ public class GTBTest {
   // nom - nom - min - nom
 
   @Test
-  public void testMain6() throws Exception {
+  public void testGTB6() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { false, false, false, false, false, false, false, false, false, false };
@@ -84,7 +84,7 @@ public class GTBTest {
   // nom - nom - min+ - nom
 
   @Test
-  public void testMain7() throws Exception {
+  public void testGTB7() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, false, false, false, false, false, false, false, false, false };
@@ -96,7 +96,7 @@ public class GTBTest {
   // nom - nom - max- - nom
 
   @Test
-  public void testMain8() throws Exception {
+  public void testGTB8() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, true, true, true, true, false };
@@ -108,7 +108,7 @@ public class GTBTest {
   // nom - nom - max - nom
 
   @Test
-  public void testMain9() throws Exception {
+  public void testGTB9() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, true, true, true, true, true };
@@ -120,7 +120,7 @@ public class GTBTest {
   // nom - min - nom - nom
 
   @Test
-  public void testMain10() throws Exception {
+  public void testGTB10() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { false, false, false, false, false, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -132,7 +132,7 @@ public class GTBTest {
   // nom - min+ - nom - nom
 
   @Test
-  public void testMain11() throws Exception {
+  public void testGTB11() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, false, false, false, false, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -144,7 +144,7 @@ public class GTBTest {
   // nom - max- - nom - nom
 
   @Test
-  public void testMain12() throws Exception {
+  public void testGTB12() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, true, true, true, true, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -156,7 +156,7 @@ public class GTBTest {
   // nom - max - nom - nom
 
   @Test
-  public void testMain13() throws Exception {
+  public void testGTB13() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, true, true, true, true, true };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -168,7 +168,7 @@ public class GTBTest {
   // min - nom - nom - nom
 
   @Test
-  public void testMain14() throws Exception {
+  public void testGTB14() throws Exception {
     boolean[] tree0 = { false, false, false, false, false, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -180,7 +180,7 @@ public class GTBTest {
   // min+ - nom - nom - nom
 
   @Test
-  public void testMain15() throws Exception {
+  public void testGTB15() throws Exception {
     boolean[] tree0 = { true, false, false, false, false, false, false, false, false, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -192,7 +192,7 @@ public class GTBTest {
   // max- - nom - nom - nom
 
   @Test
-  public void testMain16() throws Exception {
+  public void testGTB16() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, true, true, true, true, false };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };
@@ -204,7 +204,7 @@ public class GTBTest {
   // max - nom - nom - nom
 
   @Test
-  public void testMain17() throws Exception {
+  public void testGTB17() throws Exception {
     boolean[] tree0 = { true, true, true, true, true, true, true, true, true, true };
     boolean[] tree1 = { true, true, true, true, true, false, false, false, false, false };
     boolean[] tree2 = { true, true, true, true, true, false, false, false, false, false };

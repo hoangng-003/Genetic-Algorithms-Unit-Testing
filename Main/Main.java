@@ -1,4 +1,5 @@
 package Main;
+
 import java.util.Random;
 import org.junit.Test;
 
@@ -24,15 +25,15 @@ public class Main {
 
   public static TreeNode logic(TreeNode[] reg) {
     while (true) {
-      reg = random(reg);
-      cross(reg);
-      statics(reg);
-
       for (TreeNode child : reg) {
         if (child.isSuccess()) {
           return child;
         }
       }
+
+      reg = random(reg);
+      cross(reg);
+      statics(reg);
     }
   }
 
@@ -91,18 +92,13 @@ public class Main {
       if (randomValue <= root[0].calPercent(sum)) {
         reg[i] = root[0];
         j = 0;
-      } else if (randomValue > root[0].calPercent(sum)
-          && randomValue <= root[0].calPercent(sum) + root[1].calPercent(sum)) {
+      } else if (randomValue <= root[0].calPercent(sum) + root[1].calPercent(sum)) {
         reg[i] = root[1];
         j = 1;
-
-      } else if (randomValue > root[0].calPercent(sum) + root[1].calPercent(sum)
-          && randomValue <= root[0].calPercent(sum) + root[1].calPercent(sum) + root[2].calPercent(sum)) {
+      } else if (randomValue <= root[0].calPercent(sum) + root[1].calPercent(sum) + root[2].calPercent(sum)) {
         reg[i] = root[2];
         j = 2;
-
-      } else if (randomValue <= root[0].calPercent(sum) + root[1].calPercent(sum) + root[2].calPercent(sum)
-          + root[3].calPercent(sum)) {
+      } else {
         reg[i] = root[3];
         j = 3;
       }
