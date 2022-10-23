@@ -41,7 +41,6 @@ public class Main {
 
   public static void statics(TreeNode[] root) {
     sum = 0;
-    GlobalTrueMinusFalse = 0;
 
     for (int i = 0; i < 4; i++) {
       root[i].reCalculate();
